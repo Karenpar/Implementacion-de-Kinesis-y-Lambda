@@ -17,7 +17,7 @@ def lambda_handler(event, context):
     with table.batch_writer() as batch_writer:
         for item in deserialized_data:
 			
-			id_compra = item['id_compra']
+	    id_compra = item['id_compra']
             fecha_reg = item['fecha_reg']
             producto = item['producto']
             batch_writer.put_item(                        
