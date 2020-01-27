@@ -7,7 +7,7 @@
             "Action": [
                 "logs:CreateLogStream",
                 "logs:PutLogEvents",
-				"logs:CreateLogGroup"
+		"logs:CreateLogGroup"
             ],
             "Resource": "*"
         },
@@ -15,12 +15,12 @@
             "Sid": "VisualEditor1",
             "Effect": "Allow",
             "Action": [
-				"kinesis:DescribeStream",
+		"kinesis:DescribeStream",
                 "kinesis:GetShardIterator",
-				"kinesis:GetRecords",
+		"kinesis:GetRecords",
                 "dynamodb:BatchWriteItem",
                 "dynamodb:PutItem",
-				"sns:Publish"
+		"sns:Publish"
             ],
             "Resource": "*"
         }
